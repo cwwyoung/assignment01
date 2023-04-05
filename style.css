@@ -58,12 +58,6 @@ ul {
     top: 8rem;
 
 }
-  
-/* p {
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    font-family: "Barlow";
-} */
 
 button {
     background-color: #213C28;
@@ -74,8 +68,7 @@ button {
     color: white;
     line-height: 2.9rem;
     font-size: 2rem;
-    font-family: "Offside";
-    
+    font-family: "Offside"; 
 }
 /* header */
 
@@ -214,6 +207,7 @@ font-size: 2rem;
 }
 
 /* links */
+
 .links {
     height: 200px;
     display: flex;
@@ -237,7 +231,7 @@ font-size: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
+    
     line-height: 3rem;
     letter-spacing: 0.2px;
     font-family: "Barlow";
@@ -246,82 +240,12 @@ font-size: 2rem;
 }
 
 /* bottom */
-/* 
-.contact {
-    display: flex;
-    background-color:#213C28;
-    color: white;
-    align-items: center;
-}
-
-.email {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    text-align: left;
-    align-items: flex-start;
-    padding: 50px;
-    line-height: 30px;
-    letter-spacing: 0.2px;
-    font-family: "Barlow";
-    
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    text-align: left;
-    padding: 50px;
-}
-
-
-
-.formContainer {
-    display: flex;
-    align-items: flex-start;
-}
-
-.email button {
-    background: #2c2d2c;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.email h3 {
-    margin: 0;
-}
-.email p {
-    margin: 0;
-}
-
-.info p {
-    padding: 0;
-    margin: 0;
-}
-
-.info li {
-    margin: 0;
-    padding-left: 0;
-}
-
-.navigation {
-    width: 10%;
-}
-.navigation ul {
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    
-} */
 
 .footer {
     background-color: #213C28;
 }
 .contact {
     display: flex;
-    /* align-items: center; */
     color: white;
     
     
@@ -338,6 +262,7 @@ font-size: 2rem;
     margin: 0;
     padding: 0;
 }
+
 .formContainer {
     display: flex;
     align-items: center;
@@ -410,14 +335,20 @@ footer {
 }
 
 /* media queries */
+@media (min-width: 578px) {
+    .burger {
+        display: none;
+        }
+    }
+    
 
 
-
-@media (max-width: 480px) {
+@media (max-width: 578px) {
     nav ul,
     .socials {
         display: none;
     }
+
 
     .links {
         flex-direction: column;
@@ -468,5 +399,22 @@ footer {
     .aboutImage {
         display: none;
     }
+
+    .galleryContainer {
+        flex-wrap: wrap;
+    }
+
+
+    .galleryTop {
+        display: flex;
+        gap: 2.5rem;
+        width: 100vw;
+    }
+
+    .galleryTop img {
+        width: calc(40% - 4.5rem);
+    }
+
+    
 } 
 
